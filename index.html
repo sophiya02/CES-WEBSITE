@@ -1,100 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" >
-    <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
-    <title>Computer Engineering Scoiety</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- bootstrap-css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- aos js -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- fonts  -->
+  <!-- Lobster -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- ZCOOL kuaile -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <!-- Philosopher -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+  <!-- style sheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <title>Computer Engineering Society</title>
 </head>
+
 <body>
-    <div id="main">
-
-
-        <!-- Navbar -->
-        
-        <nav class=" nav navbar navbar-expand-lg  bg-dark fixed-top" >
-            <div class="container-fluid">
-              <nav class="navbar navbar-light bg-transparent m-0 p-0">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/ces2.png" alt="Ces Logo" width="65"  class="d-inline-block bg-dark align-text-top">
+  <!-- background & navbar -->
+  <nav class=" nav navbar navbar-expand-lg  bg-transparent fixed-top">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-transparent m-0 p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/ces2.png" alt="Ces Logo" width="65"
+              class="d-inline-block rounded-circle bg-dark align-text-top">
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto me-auto mb-2  mb-lg-0 fs-4 ">
+          <li class="nav-item ">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" href="#">Team</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" href="#">Alumni</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" href="#">Events</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
                   </a>
-                </div>
-              </nav>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto me-auto mb-2  mb-lg-0 fs-5 " >
-                  <li class="nav-item ">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#">Team</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#">Alumni</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#">Events</a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-                  
-                </ul>
-                <nav class="navbar navbar-light bg-transparent m-0 p-0">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="http://www.mmmut.ac.in/" target="_blank">
-                        <img src="images/MMMUT.png" alt="Ces Logo" width="65"  class="d-inline-block bg-transparent align-text-top">
-                      </a>
-                    </div>
-                  </nav>
-              </div>
-            </div>
-          </nav>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
 
-          <!-- background -->
-          <div class=" background bg-transparent text-white">
-            <img src="images/pexels-pixabay-247676.jpg" alt="background"  class=" w-100 d-inline-block align-text-top">
-            
-            
+        </ul>
+        <nav class="navbar navbar-light bg-transparent m-0 p-0">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="http://www.mmmut.ac.in/" target="_blank">
+              <img src="images/MMMUT.png" alt="Ces Logo" width="65"
+                class="d-inline-block bg-dark rounded-circle align-text-top">
+            </a>
           </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+  <!-- only background image -->
+  <div class="image  d-flex z-index-n1">
+  </div>
 
+  <!-- wave at bottom -->
+  <!-- <div class="waveWrapper waveAnimation">
+    
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+  </div> -->
+  <!-- code to add ces animation  -->
+  <!-- <div class="main-body-head ">
+          <script>
+            window.canvasOptions = {
+              autoClear: true,
+              autoCompensate: false,
+              autoPushPop: true,
+              canvas: true,
+              centered: true,
+              desynchronized: false,
+              width: null,
+              height: null
+            };
+            
+            /* requestAnimationFrame */
+          </script>
+           <script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
+           <script  src="js/ces-script.js"></script>
+          </div> -->
+
+  <!-- code to add scroll down arrow -->
+  <a href="#about"><div class=" d-flex justify-content-center arrow-container animated fadeInDown">
+      
+            <div class="arrow-2 align-self-center">
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="arrow-1 animated hinge infinite zoomIn"></div>
+         
+          </div>
+        </a>
+
+<!-- about-us section -->
+  <section id="about" class="mx-auto mt-5 w-100 p-1 position-relative " data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="about-heading text-center mt-4 mb-1" data-aos="fade-up" data-aos-duration="1000">About</h1>
+    <hr class="m-auto ">
+    <h3 class="about-heading text-center mt-1 mb-2" data-aos="fade-up">Who We Are?</h3>
+    <p class="lead about-para text-center mx-auto mt-4 mb-2 p-2 w-75 fs-5" data-aos="slide-left" data-aos-duration="2000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ullam neque
+      cumque alias blanditiis hic odit ipsa reiciendis quas saepe iusto id repellendus, voluptas soluta, et
+      exercitationem harum vitae obcaecati!
+      Qui corrupti incidunt aut recusandae ad facere, placeat numquam maiores, voluptatibus repudiandae amet ullam sequi
+      necessitatibus atque, doloribus reprehenderit perspiciatis consequuntur impedit culpa eius. Ab omnis neque minima
+      placeat illum?
+    </p>
+  </section>
+
+
+<!-- upcoming events -->
+<div class="d-flex flex-column justify-content-center crd mt-5 mb-5 mx-auto">
+  <div class="head-upc-events" data-aos="zoom-in-up" data-aos-duration="1000">
+    <h1>Upcoming Events</h3>
+  </div>
+  <div class="crd-container" data-aos="slide-right" data-aos-duration="2000">
+
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="event1 p-2 m-auto">Lorem</h2>
+          <p class="event1 p-2 m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, tempora laborum? Quisquam blanditiis, dicta quibusdam illo, qui omnis fuga impedit ullam ut illum consequuntur iure consequatur, assumenda numquam consectetur veniam.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>Event Name</h2>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="event2 p-2 m-auto">Lorem</h2>
+          <p class="event2 p-2 m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, tempora laborum? Quisquam blanditiis, dicta quibusdam illo, qui omnis fuga impedit ullam ut illum consequuntur iure consequatur, assumenda numquam consectetur veniam.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>Event Name</h2>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="event3 p-2 m-auto">Lorem</h2>
+          <p class="event3 p-2 m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, tempora laborum? Quisquam blanditiis, dicta quibusdam illo, qui omnis fuga impedit ullam ut illum consequuntur iure consequatur, assumenda numquam consectetur veniam.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2 class="event-name">Event Name</h2>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- messages -->
+<div data-aos="slide-right" data-aos-duration="1000" class=" content d-flex justify-content-center mt-5 pt-5 mb-5">
+  <div class="card-info ">
+    <div class="firstinfo d-flex justify-content-center align-items-center"><img src="https://randomuser.me/api/portraits/lego/6.jpg"/>
+      <div class="profileinfo p-3 ">
+        <h1 class="fs-1">Francesco Moustache</h1>
+        <h3 class="fs-4">Python Ninja</h3>
+        <p class="bio fs-5">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="badgescard d-flex justify-content-center align-items-center align-self-center">
+     <span class="fa-solid fa-1 d-flex align-self-center"></span>
+     <span class="fa-solid fa-2 d-flex align-self-center"> </span>
+     <span class="fa-solid fa-3 d-flex align-self-center"></span>
+     <span class="fa-solid fa-4 d-flex align-self-center"></span>
+     <span class="fa-solid fa-5 d-flex align-self-center"></span>
+     <span class="fa-solid fa-6 d-flex align-self-center"></span>
+     <span class="fa-solid fa-7 d-flex align-self-center"> </span>
+    </div> -->
+</div>
+<div data-aos="slide-left" data-aos-duration="1000" class=" content d-flex justify-content-center mt-5 pt-5 mb-5">
+  <div class="card-info ">
+    <div class="firstinfo d-flex justify-content-center align-items-center"><img src="https://randomuser.me/api/portraits/lego/6.jpg"/>
+      <div class="profileinfo p-3 ">
+        <h1 class="fs-1">Francesco Moustache</h1>
+        <h3 class="fs-4">Python Ninja</h3>
+        <p class="bio fs-5">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="badgescard d-flex justify-content-center align-items-center align-self-center">
+     <span class="fa-solid fa-1 d-flex align-self-center"></span>
+     <span class="fa-solid fa-2 d-flex align-self-center"> </span>
+     <span class="fa-solid fa-3 d-flex align-self-center"></span>
+     <span class="fa-solid fa-4 d-flex align-self-center"></span>
+     <span class="fa-solid fa-5 d-flex align-self-center"></span>
+     <span class="fa-solid fa-6 d-flex align-self-center"></span>
+     <span class="fa-solid fa-7 d-flex align-self-center"> </span>
+    </div> -->
+</div>
+<div data-aos="slide-right" data-aos-duration="1000" class=" content d-flex justify-content-center mt-5 pt-5 mb-5">
+  <div class="card-info ">
+    <div class="firstinfo d-flex justify-content-center align-items-center"><img src="https://randomuser.me/api/portraits/lego/6.jpg"/>
+      <div class="profileinfo p-3 ">
+        <h1 class="fs-1">Francesco Moustache</h1>
+        <h3 class="fs-4">Python Ninja</h3>
+        <p class="bio fs-5">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="badgescard d-flex justify-content-center align-items-center align-self-center">
+     <span class="fa-solid fa-1 d-flex align-self-center"></span>
+     <span class="fa-solid fa-2 d-flex align-self-center"> </span>
+     <span class="fa-solid fa-3 d-flex align-self-center"></span>
+     <span class="fa-solid fa-4 d-flex align-self-center"></span>
+     <span class="fa-solid fa-5 d-flex align-self-center"></span>
+     <span class="fa-solid fa-6 d-flex align-self-center"></span>
+     <span class="fa-solid fa-7 d-flex align-self-center"> </span>
+    </div> -->
+</div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small  unique-color-dark bg-dark">
+
+  <div style="background-color: #810192;">
+    <div class="container text-light">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic m-2 p-1">
+            <i class="fab fa-facebook-f white-text mr-4 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic m-2 p-i">
+            <i class="fab fa-twitter white-text fa-2x mr-4"> </i>
+          </a>
+          <!-- Google +-->
           
+          <!--Linkedin -->
+          <a class="li-ic m-2 p-1">
+            <i class="fab fa-linkedin-in white-text mr-4 fa-2x" > </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic m-1 p-1">
+            <i class="fab fa-instagram white-text fa-2x"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
 
     </div>
-    <script>
-      script.
-    window.canvasOptions = {
-      autoClear: true,
-      autoCompensate: false,
-      autoPushPop: true,
-      canvas: true,
-      centered: true,
-      desynchronized: false,
-      width: null,
-      height: null,
-    };
-    /* requestAnimationFrame */
-    </script>
-    <script src="js/script.js">
-    
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-light text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">CES</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Events</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a href="#!">Bootstrap Angular</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Find Us</a>
+        </p>
+        <p>
+          <a href="#!">FAQ</a>
+        </p>
+        <p>
+          <a href="#!">Alumni</a>
+        </p>
+        <p>
+          <a href="#!">Become a member</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> MMMUT Gorakhpur, India</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/"> CES.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  <!-- /* script */ -->
+  <!-- /* bootstrap  */ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
+
 </html>
